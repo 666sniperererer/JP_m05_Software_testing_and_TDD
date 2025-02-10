@@ -24,12 +24,40 @@ from p02_ComplexNumber import ComplexNumber
 class Test:
 
     def setup_method(self):
-        print("START")
+        print("\nSTART\n")
 
     def teardown_method(self):
-        print("FINISH")
+        print("FINISH\n")
 
-    def test_addition(self):
-        complexnumber = ComplexNumber()
-        result = basic_calculator.add(3, 5)
-        assert result == 8
+    def test_eq(self):
+        complexnumber1 = ComplexNumber(5, 3)
+        complexnumber2 = ComplexNumber(7, 4)
+        result = False
+        assert result == (complexnumber1 == complexnumber2)
+
+    def test_lt(self):
+        pass
+
+    def test_gt(self):
+        pass
+
+    def test_repr(self):
+        pass
+
+    def test_str(self):
+        pass
+
+    def test_add(self):
+        pass
+
+    def test_sub(self):
+        pass
+
+    def test_div(self):
+        pass
+
+    def test_con(self):
+        pass
+
+    def test_abs(self):
+        pass
